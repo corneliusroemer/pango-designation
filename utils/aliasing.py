@@ -3,7 +3,7 @@ class Aliasor:
     def __init__(self, alias_file):
         import pandas as pd
 
-        aliases = pd.read_json('pango_designation/alias_key.json')
+        aliases = pd.read_json(alias_file)
 
         self.alias_dict = {}
         for column in aliases.columns:
